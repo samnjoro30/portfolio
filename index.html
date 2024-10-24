@@ -4,82 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Njoro | Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Header Section -->
+    <header class="bg-success text-white text-center py-5">
+        <nav class="navbar navbar-expand-md navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sam Njoro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="hero">
-            <h1>Hi, I'm Sam Njoro</h1>
-            <p>A passionate IT professional, web developer and an inspiring to be a data analyst</p>
-            <a href="#contact" class="btn">Hire Me</a>
+        <div class="hero py-5">
+            <h1 class="display-4">Hi, I'm Sam Njoro</h1>
+            <p class="lead">A passionate IT professional, web developer, and aspiring data analyst</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
         </div>
     </header>
 
-    
-    <section id="about">
+    <section id="about" class="container my-5 text-center">
         <h2>About Me</h2>
-        <p>I'm a university student studying IT, and I also attend eMobilis to advance my skills in web and mobile development. I love solving problems and building useful applications that make an impact.</p>
-        <p>welcome to tech world</p>
-        <div class="skills">
-            <div class="skill">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, django</p>
-                <p>React, express, node and mongodb</p>
+        <p>I'm a university student studying IT, attending eMobilis to advance my skills in web and mobile development. I love solving problems and building applications that make an impact.</p>
+        <p>Welcome to the tech world!</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="skill p-3 bg-white shadow-sm rounded">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, Django</p>
+                    <p>React, Express, Node, MongoDB</p>
+                </div>
             </div>
-            <div class="skill">
-                <h3>Mobile Development</h3>
-                <p>React Native, Flutter, java</p>
+            <div class="col-md-4">
+                <div class="skill p-3 bg-white shadow-sm rounded">
+                    <h3>Mobile Development</h3>
+                    <p>React Native, Flutter, Java</p>
+                </div>
             </div>
-            <div class="skill">
-                <h3>IT Consultancy</h3>
-                <p>IT systems, Networking, Troubleshooting</p>
+            <div class="col-md-4">
+                <div class="skill p-3 bg-white shadow-sm rounded">
+                    <h3>IT Consultancy</h3>
+                    <p>IT systems, Networking, Troubleshooting</p>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5 text-center">
         <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1: Portfolio Website</h3>
-                <p>A personal website to showcase my skills and projects.</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="project p-3 bg-white shadow-sm rounded">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A personal website to showcase my skills and projects.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2: eCommerce App</h3>
-                <p>A mobile application built using React Native for online shopping.</p>
+            <div class="col-md-4">
+                <div class="project p-3 bg-white shadow-sm rounded">
+                    <h3>Project 2: eCommerce App</h3>
+                    <p>A mobile app built using React Native for online shopping.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 3: Blogging Platform</h3>
-                <p>A simple blog website built with HTML, CSS, and JavaScript.</p>
+            <div class="col-md-4">
+                <div class="project p-3 bg-white shadow-sm rounded">
+                    <h3>Project 3: Banking website</h3>
+                    <p>I have created a banking website with react, node and Express</p>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="contact">
+    <section id="contact" class="container my-5 text-center">
         <h2>Contact Me</h2>
         <p>If you're interested in working together, feel free to reach out!</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+        <form class="d-flex flex-column align-items-center" action="#" method="POST">
+            <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required style="width: 300px;">
+            <input type="email" class="form-control mb-3" name="email" placeholder="Your Email" required style="width: 300px;">
+            <textarea class="form-control mb-3" name="message" rows="5" placeholder="Your Message" required style="width: 300px;"></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
 
    
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Sam Njoro. All Rights Reserved.</p>
     </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

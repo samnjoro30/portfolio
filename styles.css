@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,20 +23,12 @@ ul {
     margin: 0;
 }
 
+/* Hero Section */
 header {
-    background-color: #2dab35;
+    background-color: #2dab35; /* Retaining custom green */
     color: white;
     padding: 20px 0;
     text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
 }
 
 .hero {
@@ -53,7 +45,7 @@ nav ul li {
 }
 
 .btn {
-    background-color: #007BFF;
+    background-color: #007BFF; /* Bootstrap primary button color */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -62,14 +54,16 @@ nav ul li {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker on hover */
 }
 
+/* Section Styling */
 section {
     padding: 50px 20px;
     text-align: center;
 }
 
+/* About Section */
 #about .skills {
     display: flex;
     justify-content: center;
@@ -82,9 +76,9 @@ section {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
 }
 
+/* Projects Section */
 #projects .project-list {
     display: flex;
     justify-content: center;
@@ -97,9 +91,9 @@ section {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
 }
 
+/* Contact Form */
 #contact form {
     display: flex;
     flex-direction: column;
@@ -116,7 +110,7 @@ section {
 }
 
 #contact button {
-    background-color: #007BFF;
+    background-color: #007BFF; /* Bootstrap primary button */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -128,6 +122,7 @@ section {
     background-color: #0056b3;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
